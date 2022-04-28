@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Nanum+Gothic&display=swap');
+
+
+body {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    background: no-repeat left/90% url(game.jpg);
+
+    /*Make bg image responsive*/
+    background-size: contain;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.logo {
+    position: relative;
+    top: 20%;
+    display: flex;
+    height: 8em;
+    justify-content: center;
+    width: 55%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 1em;
+}
+
+.logo img {    
+    filter: invert(99%) sepia(0%) saturate(4251%) hue-rotate(165deg) brightness(113%) contrast(100%);
+}
+
+.logo span {
+    align-self: center;
+    font-family: 'Abril Fatface', sans-serif;
+    font-size: 2.5em;
+    color: white;
+}
+
+.imgCredit {
+    justify-self: bottom;
+}
+
+.use {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    background-color: rgb(248, 247, 247);
+    padding: 9em 40px 9em 40px;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.use .info {
+    text-align: justify;
+    font-size: 1.3em;
+}
+
+form {
+    width: 100%;
+}
+
+.inputGroup {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+}

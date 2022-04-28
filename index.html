@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sing up!</title>
+</head>
+<body>
+   <div class="logo">
+       <img src="chess-horse.svg" alt="Chess Logo">
+       <span>Chess League</span>
+   </div> 
+
+   <div class="use">
+       <p class="info">
+           Our second chess league will take place this month. Don't miss the chance to take part in our competition!
+           Come and test your talents against the best chess players on the internet! Our deadline is 
+           <span class="deadline">28/04/2022</span>.
+       </p>
+       <form action="POST">
+           <section>
+               <legend>Your infomation here</legend>
+               <div id="names" class="inputGroup">
+                   <div class="input">
+                        <label for="firstName">First Name</label>
+                        <input type="text" name="user_firstName" id="firstName">
+                   </div>
+
+                    <div class="input">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" name="user_lastName" id="lastName">
+                    </div>
+                </div>
+
+                <div id="contact" class="inputGroup">
+                    <div class="input">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" name="user_phone" id="phone">
+                    </div>
+
+                    <div class="input">
+                        <label for="mail">E-mail</label>
+                        <input type="email" name="user_mail" id="mail">
+                    </div>
+                </div>
+
+                <div id="password" class="inputGroup">
+                    <div class="input">
+                        <label for="pwd">Password</label>
+                        <input type="password" name="user_pwd" id="password" minlength="4" maxlength="8">
+                    </div>
+
+                    <div class="input">
+                        <label for="checkPwd">Confirm Password</label>
+                        <input type="password" id="checkPwd" >
+                    </div>
+                </div>
+           </section>
+
+           <div class="btn">
+               <button>Create Account</button>
+           </div>
+       </form>
+   </div>
+</body>
+</html>
