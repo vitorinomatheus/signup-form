@@ -50,7 +50,7 @@ body {
     justify-content: space-evenly;
     width: 100%;
     background-color: rgb(248, 247, 247);
-    padding: 5em 3em 5em 3em;
+    padding: 3em 3em 8em 3em;
     font-family: 'Nanum Gothic', sans-serif;
 }
 
@@ -93,7 +93,7 @@ legend {
 }
 
 input{
-    height: 20px;
+    height: 1.5em;
     font-size: 130%;
 }
 
@@ -101,7 +101,6 @@ input:focus {
     outline: none !important;
     background-color: rgb(236, 236, 236);
     box-shadow: 0 0 2px #000000;
-
 }
 
 input:required {
@@ -140,10 +139,26 @@ input:valid + span::before {
 }
 
 .btn {
-    margin-top: 1em;
+    margin-top: 2.5vh;
+    margin-left: 0.01vw;
+    margin-right: 1vw;
 }
 
 button {
-    height: 3em;
-    width: 10em;
+    height: 11vh;
+    width: 17vw;
+    border: 1px solid;
+    cursor: pointer;
+    background-color: rgb(134, 134, 134);
+    border-radius: 5px;
+    color: white;
+}
+
+button:hover{
+    background-color:rgb(83, 83, 83);
+    box-shadow: 0 0 5px #7e7e7e;
+}
+
+.btn span {
+    margin-left: 1vw;
 }
