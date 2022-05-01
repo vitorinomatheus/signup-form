@@ -17,52 +17,48 @@
    <div class="use">
        <p class="info">
            Our second chess league will take place this month. Don't miss the chance to take part in our competition!
-           Come and test your talents against the best chess players on the internet! Our deadline is 
-           <span class="deadline">April, 30th</span>.
+           Come and test your talents against the best chess players online!
        </p>
-       <form action="POST">
+       <form action="">
            <fieldset>
                <legend>Your infomation here</legend>
                <div id="names" class="inputGroup">
                    <div class="input">
                         <label for="firstName">FIRST NAME</label>
-                        <input type="text" name="user_firstName" id="firstName" minlength="2" placeholder="Ex.: John" required>
-                        <span></span>
+                        <input type="text" name="user_firstName" id="firstName" minlength="2" maxlength="14"
+                        pattern='^[a-zA-Z]+$' placeholder="Ex.: John" required>
                    </div>
 
                     <div class="input">
                         <label for="lastName">LAST NAME</label>
-                        <input type="text" name="user_lastName" id="lastName" minlength="2" placeholder="Ex.: Snow" required>
-                        <span></span>
+                        <input type="text" name="user_lastName" id="lastName" minlength="2" maxlength="14"
+                        pattern='^[a-zA-Z]+$' placeholder="Ex.: Snow" required>
                     </div>
                 </div>
 
                 <div id="contact" class="inputGroup">
                     <div class="input">
                         <label for="phone">PHONE NUMBER</label>
-                        <input type="tel" name="user_phone" id="phone" pattern='^\([0-9]{3}\)[0-9]{3}-[0-9]{4}$' 
-                        placeholder="Ex.:(555) 555-1234" minlength='14' maxlength='14' required>
-                        <span></span>
+                        <input type="tel" name="user_phone" id="phone" placeholder="Ex.:(555) 555-1234" 
+                        pattern='^[(]\d{3}[)] \d{3}-\d{4}$' maxlength='14' required>
                     </div>
 
                     <div class="input">
                         <label for="mail">E-MAIL</label>
                         <input type="email" name="user_mail" id="mail" placeholder="Ex.: john@provider.com" required>
-                        <span></span>
                     </div>
                 </div>
 
                 <div id="password" class="inputGroup">
                     <div class="input">
                         <label for="pwd">PASSWORD</label>
-                        <input type="password" name="user_pwd" id="password" minlength="4" maxlength="8" required>
-                        <span></span>
+                        <input type="password" name="user_pwd" id="pwd" minlength="4" maxlength="12" required>
                     </div>
 
                     <div class="input">
                         <label for="checkPwd">CONFIRM PASSWORD</label>
-                        <input type="password" id="checkPwd" required>
-                        <span></span>
+                        <input type="password" id="checkPwd" minlength='4' maxlength='12' required>
+                        <span class='errorMsg'></span>
                     </div>
                 </div>
            </fieldset>
@@ -73,5 +69,6 @@
            </div>
        </form>
    </div>
+
 </body>
 </html>
